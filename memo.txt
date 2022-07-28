@@ -1,0 +1,49 @@
+ // やること
+ 部屋にconnect,disconnectしたときにブロードキャスト
+socket.broadcast.emit("")
+
+ ユーザーネームの追加
+nameフォームの作成する
+メッセージと一緒にuserも送ればよさそう
+
+
+ ユーザーのリスト表示
+配列を用意して共有
+connect,disconnct時に
+配列を操作
+
+ 書き込み中を追加
+ 同じメッセージを打たせない
+前に打ったメッセージを記憶して同じであれば送信しない
+
+newmss='' 
+oldmss
+
+if(oldmss==newmss){
+    //処理
+}
+
+oldmss=newmss
+
+ DMのついか
+ルーム作るなりして
+socket.to(socket.id)でユーザーのidをしてやればいいのではないか
+ドキュメントの
+/server-socket-instance/#disconnecting
+に書いてある
+
+msgにifで送りたかったけどめんどいから別で作ってもよさそう
+
+user　typing
+テキストボックスの中身が1以上の時にtyping判定でemit
+
+
+
+・その他
+接続している人数
+ユーザーが消えたら配列の操作
+あとから来たユーザーに情報をわたす
+自分の話していること
+
+
+関数の引数は順番道理にしなければならないのか？？？
